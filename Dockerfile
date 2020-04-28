@@ -1,6 +1,7 @@
 FROM centos
 RUN yum update -y
 RUN yum install java-1.8.0-openjdk -y
+RUN yum install wget -y
 RUN wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
 RUN wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
 RUN yum install jenkins -y
